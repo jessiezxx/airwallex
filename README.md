@@ -13,6 +13,7 @@ Your test URL is configurable to support running test cases for different enviro
 You can configure it in testng.xml or as a command line parameter of gradle via the "-D" option.
 
 Run your cases from command line:
-```gradle test -DserverUrl=http://preview.airwallex.com:30001/bank
-
+```
+gradle test -DserverUrl=http://preview.airwallex.com:30001/bank
+```
 You can open test-output/index.html with a browser to view the test results.
