@@ -75,8 +75,8 @@ public class MyDataProvider {
 	    String responseBody2 = "{\"error\":\"Length of account_number should be between 7 and 11 when bank_country_code is 'US'\"}";
 	    String responseBody3 = "{\"error\":\"Length of account_number should be between 6 and 9 when bank_country_code is 'AU'\"}";
 	    String responseBody4 = "{\"error\":\"Length of account_number should be between 6 and 9 when bank_country_code is 'AU'\"}";
-	    String responseBody5 = "{\"error\":\"Length of account_number should be between 8 and 12 when bank_country_code is 'CN'\"}";
-	    String responseBody6 = "{\"error\":\"Length of account_number should be between 8 and 12 when bank_country_code is 'CN'\"}";
+	    String responseBody5 = "{\"error\":\"Length of account_number should be between 8 and 20 when bank_country_code is 'CN'\"}";
+	    String responseBody6 = "{\"error\":\"Length of account_number should be between 8 and 20 when bank_country_code is 'CN'\"}";
 		return new Object[][] { {  requestBody1, 400, responseBody1 } ,{requestBody2, 400, responseBody2},{requestBody3, 400, responseBody3},{requestBody4, 400, responseBody4},{requestBody5, 400, responseBody5},{requestBody6, 400, responseBody6}};
     }
 	
@@ -289,9 +289,9 @@ public class MyDataProvider {
 	    String responseBody3 = "{\"error\":\"The swift code is not valid for the given bank country code: US\"}";
 	    String responseBody4 = "{\"error\":\"The swift code is not valid for the given bank country code: AU\"}";
 	    String responseBody5 = "{\"error\":\"The swift code is not valid for the given bank country code: CN\"}";
-	    String responseBody6 = "{\"error\": \"Length of 'swift_code' should be either 8 or 11\"}";
+	    String responseBody6 = "{\"error\":\"Length of 'swift_code' should be either 8 or 11\"}";
 	    String responseBody7 = "{\"success\":\"Bank details saved\"}";
-	    String responseBody8 = "{\"error\": \"Length of 'swift_code' should be either 8 or 11\"}";
+	    String responseBody8 = "{\"error\":\"Length of 'swift_code' should be either 8 or 11\"}";
 	    String responseBody9 = "{\"success\":\"Bank details saved\"}";
 	    String responseBody10 = "{\"success\":\"Bank details saved\"}";
 		return new Object[][] { {  requestBody1, 400, responseBody1 } ,{requestBody2, 200, responseBody2},{requestBody3, 400, responseBody3}, {requestBody4, 400, responseBody4}, {requestBody5, 400, responseBody5},{requestBody6, 400, responseBody6},{requestBody7, 200, responseBody7},{requestBody8, 400, responseBody8},{requestBody9, 200, responseBody9},{requestBody10, 200, responseBody10}};
